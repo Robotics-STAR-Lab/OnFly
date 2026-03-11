@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="OnFly is a fully onboard real-time framework for zero-shot aerial vision-language navigation with stable decision-making, reliable progress monitoring, and safer trajectory generation.">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="aerial vision-language navigation, AVLN, UAV, zero-shot navigation, vision-language model, onboard autonomy, robot navigation, safety, efficiency">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="Guiyong Zheng, YueTing Ban, Mingjie Zhang, Juepeng Zheng, Boyu Zhou">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="OnFly Project Page">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="A fully onboard real-time framework for zero-shot aerial vision-language navigation with dual-agent decision-making, long-horizon progress monitoring, and safe trajectory planning.">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="article:published_time" content="2026-03-11T00:00:00.000Z">
+  <meta property="article:author" content="Guiyong Zheng">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Aerial Vision-Language Navigation">
+  <meta property="article:tag" content="UAV">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="A fully onboard real-time framework for zero-shot aerial vision-language navigation with stable decision-making and safer planning.">
+  <!-- TODO: Same as social preview image above -->
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency">
+  <meta name="citation_author" content="Zheng, Guiyong">
+  <meta name="citation_author" content="Ban, YueTing">
+  <meta name="citation_author" content="Zhang, Mingjie">
+  <meta name="citation_author" content="Zheng, Juepeng">
+  <meta name="citation_author" content="Zhou, Boyu">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="">
+  <meta name="citation_pdf_url" content="">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency</title>
+  
+  <!-- Favicon and App Icons -->
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency",
+    "description": "A fully onboard real-time framework for zero-shot aerial vision-language navigation with dual-agent decision-making, reliable long-horizon monitoring, and safe trajectory planning.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Guiyong Zheng",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Sun Yat-Sen University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "YueTing Ban",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Southern University of Science and Technology"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Mingjie Zhang",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "The Hong Kong University of Science and Technology, Guangzhou"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Juepeng Zheng",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Sun Yat-Sen University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Boyu Zhou",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Southern University of Science and Technology"
+        }
+      }
+    ],
+    "datePublished": "2026-03-11",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OnFly Project"
+    },
+    "keywords": ["aerial vision-language navigation", "AVLN", "UAV", "zero-shot navigation", "vision-language model"],
+    "abstract": "Aerial vision-language navigation enables UAVs to follow natural-language instructions in complex 3D environments. OnFly is a fully onboard, real-time framework for zero-shot AVLN with dual-agent decision-making, hybrid memory for long-horizon monitoring, semantic-geometric target verification, and receding-horizon safe planning.",
+    "citation": "@misc{zheng2026onfly,title={OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency},author={Guiyong Zheng and YueTing Ban and Mingjie Zhang and Juepeng Zheng and Boyu Zhou},year={2026}}",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Aerial Vision-Language Navigation"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Embodied AI"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OnFly Project"
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+  <section class="hero hero-cover">
+    <div class="hero-cover-video-wrap" aria-hidden="true">
+      <video class="hero-cover-video" autoplay muted loop playsinline preload="auto">
+        <source src="static/videos/bg.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <span class="title-line title-line-main">OnFly:</span>
+              <span class="title-line">Onboard Zero-Shot Aerial Vision-Language Navigation</span>
+              <span class="title-line">toward Safety and Efficiency</span>
+            </h1>
+            <p class="publication-subtitle">A fully onboard real-time framework for zero-shot aerial vision-language navigation</p>
+            <div class="is-size-5 publication-authors authors-primary">
+              <span class="author-block"><a href="https://gy920.github.io/" target="_blank" rel="noopener noreferrer">Guiyong Zheng</a><sup>1,2</sup>,</span>
+              <span class="author-block"><a href="https://robotics-star.com/people" target="_blank" rel="noopener noreferrer">YueTing Ban</a><sup>2</sup>,</span>
+              <span class="author-block"><a href="https://zager-zhang.github.io" target="_blank" rel="noopener noreferrer">Mingjie Zhang</a><sup>3,2</sup>,</span>
+              <span class="author-block"><a href="https://sai.sysu.edu.cn/teacher/246" target="_blank" rel="noopener noreferrer">Juepeng Zheng</a><sup>1</sup>, and <a href="https://robotics-star.com/people" target="_blank" rel="noopener noreferrer">Boyu Zhou</a><sup>2,&dagger;</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors authors-affiliations">
+              <span class="author-block"><sup>1</sup> School of Artificial Intelligence, Sun Yat-Sen University, Zhuhai, China</span><br>
+              <span class="author-block"><sup>2</sup> Southern University of Science and Technology, Shenzhen, China</span><br>
+              <span class="author-block"><sup>3</sup> The Hong Kong University of Science and Technology, Guangzhou, China</span>
+              <span class="eql-cntrb"><small><br><sup>&dagger;</sup> Corresponding Author</small></span>
+            </div>
+
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#paper-abstract" class="external-link button is-normal is-rounded is-dark btn-arxiv">
+                  <span class="icon">
+                    <i class="fas fa-file-alt"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#demo-videos" class="external-link button is-normal is-rounded is-dark btn-video">
+                  <span class="icon">
+                    <i class="fas fa-play-circle"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="javascript:void(0)" class="external-link button is-normal is-rounded is-dark btn-code" aria-disabled="true">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Intro + video carousel -->
+<section class="hero teaser" id="demo-videos">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <p class="teaser-intro has-text-centered">
+        <strong><em>OnFly</em></strong> enables UAVs to follow natural-language instructions in complex 3D environments with fully onboard, zero-shot aerial vision-language navigation. The system combines a shared-perception dual-agent architecture, hybrid long-horizon memory, semantic-geometric target verification, and receding-horizon planning to improve both <strong>safety</strong> and <strong>efficiency</strong>.
+      </p>
+      <h2 class="title is-3 has-text-centered teaser-section-title">REAL WORLD</h2>
+      <div class="carousel results-carousel teaser-video-carousel">
+        <div class="item teaser-video-item" data-label="Exp 1">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/exp/exp1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item teaser-video-item" data-label="Exp 2">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/exp/exp2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item teaser-video-item" data-label="Exp 3">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/exp/exp3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item teaser-video-item" data-label="Exp 4">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/exp/exp4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item teaser-video-item" data-label="Exp 5">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/exp/exp5.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item teaser-video-item" data-label="Exp 6">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/exp/exp6.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item teaser-video-item" data-label="Exp 7">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/exp/exp7.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End intro + video carousel -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light" id="paper-abstract">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Aerial vision-language navigation (AVLN) enables UAVs to follow natural-language instructions in complex 3D environments. However, existing zero-shot AVLN methods often suffer from unstable single-stream Vision-Language Model decision-making, unreliable long-horizon progress monitoring, and a trade-off between safety and efficiency. We propose OnFly, a fully onboard, real-time framework for zero-shot AVLN. OnFly adopts a shared-perception dual-agent architecture that decouples high-frequency target generation from low-frequency progress monitoring, thereby stabilizing decision-making. It further employs a hybrid keyframe-recent-frame memory to preserve global trajectory context while maintaining KV-cache prefix stability, enabling reliable long-horizon monitoring with termination and recovery signals. In addition, a semantic-geometric verifier refines VLM-predicted targets for instruction consistency and geometric safety using VLM features and depth cues, while a receding-horizon planner generates optimized collision-free trajectories under geometric safety constraints, improving both safety and efficiency. In simulation, OnFly improves task success from 26.4% to 67.8%, compared with the strongest state-of-the-art baseline, while fully onboard real-world flights validate its feasibility for real-time deployment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Benchmark Comparison
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Benchmark Comparison</h2>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+End Benchmark Comparison -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code></code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was adapted from the <a href="https://robotics-star.com/C2-Explorer/" target="_blank" rel="noopener noreferrer">C2-Explorer project page template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
