@@ -4,7 +4,7 @@
 
 <p>
   <a href="https://gy920.github.io/">Guiyong Zheng</a><sup>1,2</sup>,
-  <a href="https://robotics-star.com/people">Yueting Ban</a><sup>2</sup>,
+  <a href="https://bytbytbyt.github.io/">Yueting Ban</a><sup>2</sup>,
   <a href="https://zager-zhang.github.io">Mingjie Zhang</a><sup>3,2</sup>,
   <a href="https://sai.sysu.edu.cn/teacher/246">Juepeng Zheng</a><sup>1</sup>,
   <a href="https://robotics-star.com/people">Boyu Zhou</a><sup>2,&dagger;</sup>
