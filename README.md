@@ -21,7 +21,9 @@
 </p>
 
 <p>
-  <a href="https://robotics-star.com/OnFly/" target="_blank"><img alt="Project Page" src="https://img.shields.io/badge/Project_Page-Website-4A90E2?logo=googlechrome&logoColor=white"/></a>
+  <a href="http://arxiv.org/abs/2603.10682"><img alt="Paper" src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white"/></a>
+  <a href='https://robotics-star.com/OnFly/'><img src='https://img.shields.io/badge/Project-Page-4A90E2?logo=googlechrome&logoColor=white' alt='Project Page'></a>
+  <a href="https://www.bilibili.com/video/BV1QpwczVEZt/"><img alt="Bilibili" src="https://img.shields.io/badge/Video-Bilibili-FB7299?logo=bilibili&logoColor=white"/></a>
 </p>
 
 <p><strong>Code coming soon.</strong></p>
