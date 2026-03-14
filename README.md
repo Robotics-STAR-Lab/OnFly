@@ -29,3 +29,19 @@
 <p><strong>Code coming soon.</strong></p>
 
 </div>
+
+## Citation
+
+If you find this project useful, please consider citing:
+
+```bibtex
+@misc{zheng2026onflyonboardzeroshotaerial,
+  title={OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency},
+  author={Guiyong Zheng and Yueting Ban and Mingjie Zhang and Juepeng Zheng and Boyu Zhou},
+  year={2026},
+  eprint={2603.10682},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2603.10682},
+}
+```
